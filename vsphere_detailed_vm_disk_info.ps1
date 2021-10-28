@@ -3,7 +3,7 @@
 $vcservers = @("vc01.kolukisa.local","vc02.kolukisa.local","vc03.kolukisa.local")
 $env:VM
 #$env:SnapshotName
-#$env:Musteri
+#$env:Customer
 #$env:Mailto
 #$env:Subject
 # Create a PSCredential Object using the "Username" and "Password" variables created on job
