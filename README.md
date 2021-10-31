@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Ozgur Kolukisa @ozgurkk
-- 👀 I’m interested in Virtualization, Containers, Public & Hybrid cloud Techs like Azure, AWS and GCP. Also I'm Microsoft Certified Trainer.
+- 👀 I’m interested in Virtualization, Containers, Public & Hybrid cloud Techs like Azure, AWS and GCP. Also I'm a Microsoft Certified Trainer.
 - 👀 Also enjoying automation, orchestration, management and deployments (in CI/CD base)
 - 🌱 I’m currently learning Git,Terraform, Ansible and Chef. I'll never stop Learning 'till i die!
 - 💞️ I’m living in Turkey
