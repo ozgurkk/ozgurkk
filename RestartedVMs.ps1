@@ -1,4 +1,8 @@
 ##### Environment Variables ###########
+## Script composed by Ozgur Kolukisa
+## mailto: ozgurkk@gmail.com
+# This script intended to use for Jenkins. To use in powershell, please comment environment variables and add variables directly.
+#
 $env:vCenter
 $env:Cluster
 # Create a PSCredential Object using the "Username" and "Password" variables created on job
