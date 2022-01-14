@@ -16,7 +16,7 @@ $env:Cluster
 #Add-PSSnapin VMware.VimAutomation.Core -ErrorAction SilentlyContinue
 Connect-VIServer $env:vCenter -User user@vpshere.local -Password *********
 #################################################################################
-#You need to  delete or uncomment line started with Invoke-Command  and the  last line char "}" , if you're not use this script in Jenkins.
+# You need to  delete or uncomment line started with Invoke-Command  and the  last line char "}" , if you're not use this script in Jenkins.
 Invoke-Command {
 get-cluster "$env:Cluster" | get-vm | Get-VIEvent | where {$_.FullFormattedMessage -match "vSphere HA restarted virtual machine"} | select ObjectName, CreatedTime, FullFormattedMessage | Format-Table -AutoSize
 
