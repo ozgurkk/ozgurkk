@@ -1,5 +1,5 @@
 ##### Environment Variables ###########
-## Script composed by Ozgur Kolukisa
+## Script composed by Ozgur KOLUKISA
 ## Purpose : This powercli script gives you a current list of vm's restarted by vSphere HA. Useful after an ESXi Host failure!
 ## mailto: ozgurkk@gmail.com
 ## Note: This script intended to use for Jenkins. To use in powershell, please comment environment variables below and add the reqiured variables directly.
