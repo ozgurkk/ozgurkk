@@ -127,11 +127,11 @@ get-vm | where {(Get-TagAssignment -Entity $_ | select -ExpandProperty Tag) -mat
 @{N='Disk Partititons';E={((get-vm $_).extensiondata.Guest.Disk | Sort DiskPath | %{" $($_.DiskPath) $([math]::Round($_.Capacity /1024MB)) GB"}) -join ','}} | Sort-Object Name -Descending | ConvertTo-HTML  -Title “$env:Customer VM Performance Report” -Head “<div id=’title’>$env:Customer - Virtualization Management- Virtual Machine Performance Report</div>$br<div id=’subtitle’>Report Date $(Get-Date)</div>” -Body ” $Css $PageBoxOpener $ReportClusterStats $BoxContentOpener</table> $br $ReportGetVmCluster $BoxContentOpener $GetVmCluster $PageBoxCloser” | Out-File "C:\Program Files (x86)\Jenkins\workspace\Customer VM Performance Report\$Env:Customer-VM__$((Get-Date).ToString('MM-dd-yyyy')).html"
 ##### End Of Main Code #####
 ########### Mailing Variables ######## ################################
-$fromaddress = "vRapor@kocsistem.com.tr" 
+$fromaddress = "vRapor@yourdomain.com" 
 $toaddress = "$env:Mailto"
 $Subject = "$env:Subject"
 $attachment = "C:\Program Files (x86)\Jenkins\workspace\Musteri Vmware VM Performans Raporu\$Env:Customer-VM__$((Get-Date).ToString('MM-dd-yyyy')).html"
-$smtpserver = "195.87.213.185"  
+$smtpserver = "YourSmtpServerIp"  
 ############ Send  E-mail  ############################################   
 $message = new-object System.Net.Mail.MailMessage 
 $message.From = $fromaddress 
